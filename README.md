@@ -100,3 +100,4 @@ Since the purpose of this exercise is to provide a MVP, the project needs some i
 
 1. Clean and organize the code properly: There are a lot of repeating lines and duplicated code.
 2. There is a bug that might occur: When a request throws an error handled by the code, the next one might fail and crash the app. Since the restart policy of the container is set to `always`, the container restarts and the application continues to run normally.
+3. Develop unit and maybe integration tests.
