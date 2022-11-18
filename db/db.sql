@@ -12,5 +12,7 @@ CREATE TABLE "questions" (
 
 ALTER TABLE "questions" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
-insert into users values (1, 'francisco');
-insert into questions values (1, 'question', 'answer', 1);
+insert into users (name) values ('francisco');
+insert into questions (question, answer, user_id) values ('question', 'answer', 1);
+
+commit;
